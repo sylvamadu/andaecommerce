@@ -1,0 +1,153 @@
+
+@mixin flex($param){
+    display: flex;
+    justify-content: $param;
+    align-items: center;
+}
+
+
+@mixin mobile-md {
+    @media screen and (min-width:500px) and (max-width:768px){
+        @content;
+    }
+}
+@mixin mobile-sm {
+    @media screen and (min-width:150px) and (max-width:425px){
+        @content;
+    }
+}
+
+.header{
+    padding: 1em 2em;
+    background: #E4811C;
+    position: relative;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 300;
+    @include flex(space-between);
+    
+    @include mobile-md(){
+        height: 4em;
+    }
+    @include mobile-sm(){
+        height: 4em;
+    }
+    .menu{
+        display: none;
+        @include mobile-md(){
+            display: block;
+        }
+        @include mobile-sm(){
+            display: block;
+        }
+    }
+    .menu-icon{
+        display: none;
+        font-size: 2em;
+
+        @include mobile-md(){
+            display: block;
+        }
+        @include mobile-sm(){
+            display: block;
+        }
+    }
+    .active{
+        @include mobile-md(){
+            display: block;
+        }
+        @include mobile-sm(){
+            display: block;
+        }
+        
+    }
+    .closed{
+        @include mobile-md(){
+            display: none;
+        }
+        @include mobile-sm(){
+            display: none;
+        }
+    }
+    .logo{
+
+        h2{
+            @include mobile-md(){
+                font-size: 1.5em
+            }
+            @include mobile-sm(){
+                font-size: 1.5em
+            }
+        }
+        
+    }
+    nav{
+        
+        @include flex(space-between);
+        @include mobile-md(){
+            display: none;
+            position: absolute;
+            background: white;
+            top: 4em;
+            left: 0;
+            // right: 0;
+            height: 200px;
+            width: 100vw;
+        }
+        @include mobile-sm(){
+            display: none;
+            position: absolute;
+            background: white;
+            top: 4em;
+            left: 0;
+            // right: 0;
+            height: 200px;
+            width: 100vw;
+        }
+        
+        ul{
+            display: flex;
+            @include mobile-md(){
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+            }
+            @include mobile-sm(){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+             }
+           
+            
+
+            li{
+                padding: 0 1.5em;
+                list-style: none;
+                @include mobile-md(){
+                    padding: .5em 0;
+                }
+                @include mobile-sm(){
+                    padding: .5em 0;
+                }
+                
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                    @include mobile-md(){
+                        color: black;
+                    }
+                    @include mobile-sm(){
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        
+    }
+  
+}
+

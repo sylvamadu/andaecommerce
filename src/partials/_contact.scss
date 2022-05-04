@@ -1,0 +1,87 @@
+@mixin mobile-md {
+    @media screen and (min-width:500px) and (max-width:768px){
+        @content;
+    }
+}
+@mixin mobile-sm {
+    @media screen and (min-width:150px) and (max-width:425px){
+        @content;
+    }
+}
+
+.contact-page{
+    width: 80%;
+    margin: 0 auto;
+    @include mobile-sm(){
+        width: 100%;
+    }
+
+    img{
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+       
+    }
+
+    .contact-us-info{
+        margin: 2em 0;
+        @include mobile-sm(){
+            padding: 1em;
+        }
+
+        .title{
+            text-align: center;
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+            font-family: 'Josefin Sans', sans-serif !important;
+        }
+        form{
+            text-align: center;
+
+            .input_group{
+                display: flex;
+                flex-direction: column;
+                padding: .5em;
+                
+                
+                label{
+                    text-align: left;
+                }
+                input{
+                    background: transparent;
+                    padding: .2em 0;
+                    border: none;
+                    border-bottom: 2px solid rgb(10, 10, 10) !important;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+                textarea{
+                    background: transparent;
+                    padding: .2em 0;
+                    border: none;
+                    border-bottom: 2px solid rgb(10, 10, 10) !important;
+                    margin-bottom: 2em;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            button{
+                cursor: pointer;
+                border: none;
+                background: black;
+                color: white;
+                text-align: center;
+                padding: .6em 2em;
+                border-radius: 1em;
+                font-size: 1em;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@mixin flex($param){
+    display: flex;
+    justify-content: $param;
+    align-items: center;
+}
+
+
+@mixin mobile-md {
+    @media screen and (min-width:500px) and (max-width:768px){
+        @content;
+    }
+}
+@mixin mobile-sm {
+    @media screen and (min-width:150px) and (max-width:425px){
+        @content;
+    }
+}
+.bottomBreadCrumb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #75757a;
+    padding: .6em;
+
+    h3{
+        color: #75757a;
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif !important;
+    }
+    .grid-change-icon{
+        display: flex;
+        position: relative;
+
+        a{
+            color: black;
+        }
+        span{
+
+            .cart-icon{
+                // background: black;
+                font-size: 2.5em;
+            }
+        }
+        .number{
+            position: absolute;
+            padding: .1em .4em;
+            border-radius: .3em;
+            background: #E4811C;
+            color: white;
+            font-size: .9em;
+            top: -1.2em;
+            right: -.5em;
+        }
+    }
+}

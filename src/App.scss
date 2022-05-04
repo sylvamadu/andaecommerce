@@ -1,0 +1,39 @@
+@import './partials/reset';
+@import './partials/header';
+@import './partials/home';
+@import './partials/main';
+@import './partials/bottombreadcrumb';
+@import './partials/topbreadcrumb';
+@import './partials/cartpage';
+@import './partials/formdetails';
+@import './partials/checkout';
+@import './partials/about';
+@import './partials/contact';
+@import './partials/notfoundpage';
+@import './partials/footer';
+
+
+/*
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Poppins', sans-serif;
+    api key --- https://newsapi.org/v2/top-headlines?country=ng&apiKey=319c68c0a8ba470e98cc4e06667e4614
+*/
+$main-color: #F5F5F5;
+
+
+// @mixin mobile-md {
+//     @media screen and (min-width:500px) and (max-width:768px){
+//         @content;
+//     }
+// }
+// @mixin mobile-sm {
+//     @media screen and (min-width:150px) and (max-width:425px){
+//         @content;
+//     }
+// }
+
+.app{
+    background: $main-color;
+   
+}
+

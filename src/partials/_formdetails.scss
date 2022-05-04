@@ -1,0 +1,78 @@
+
+@mixin flex($param){
+    display: flex;
+    justify-content: $param;
+    align-items: center;
+}
+
+
+@mixin mobile-md {
+    @media screen and (min-width:500px) and (max-width:768px){
+        @content;
+    }
+}
+@mixin mobile-sm {
+    @media screen and (min-width:150px) and (max-width:425px){
+        @content;
+    }
+}
+
+.form-details{
+    background: white;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 4em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include mobile-sm(){
+        padding: 0em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    form{
+        width: 50%;
+        padding: 1em;
+        box-shadow: 2px 2px 2px grey;
+        border-radius: 1em;
+
+        @include mobile-sm(){
+            width: 95%;
+        }
+        
+
+        .input--group{
+            display: flex;
+            flex-direction: column;
+
+            label{
+                text-transform: capitalize;
+                margin-bottom: .6em;
+                font-weight: bold;
+            }
+
+            input{
+                padding-left: 1em !important;
+                padding: .3em;
+            }
+        }
+        button{
+            padding: .5em 0;
+            width: 100%;
+            margin: .5em 0;
+            background: #E4811C;
+            color: white;
+            border: none;
+            @include mobile-sm(){
+                padding: .5em 0;
+                background: #E4811C;
+                color: white;
+                border: none;
+            }
+        }
+    }
+    
+}

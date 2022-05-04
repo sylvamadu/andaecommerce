@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.33aa5bf5.chunk.css",
+    "main.js": "/static/js/main.d3e6699f.chunk.js",
+    "main.js.map": "/static/js/main.d3e6699f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5d07f2c5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5d07f2c5.js.map",
+    "static/js/2.6ebbf17f.chunk.js": "/static/js/2.6ebbf17f.chunk.js",
+    "static/js/2.6ebbf17f.chunk.js.map": "/static/js/2.6ebbf17f.chunk.js.map",
+    "static/js/3.825cd95d.chunk.js": "/static/js/3.825cd95d.chunk.js",
+    "static/js/3.825cd95d.chunk.js.map": "/static/js/3.825cd95d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.33aa5bf5.chunk.css.map": "/static/css/main.33aa5bf5.chunk.css.map",
+    "static/js/2.6ebbf17f.chunk.js.LICENSE.txt": "/static/js/2.6ebbf17f.chunk.js.LICENSE.txt",
+    "static/media/aligator-loafers.06aa5ab5.jpg": "/static/media/aligator-loafers.06aa5ab5.jpg",
+    "static/media/casual-footwear.f9a830b6.jpg": "/static/media/casual-footwear.f9a830b6.jpg",
+    "static/media/clark-smart-brown.82ff278f.jpg": "/static/media/clark-smart-brown.82ff278f.jpg",
+    "static/media/clark-smart.3bb32375.jpg": "/static/media/clark-smart.3bb32375.jpg",
+    "static/media/clarke.523f2252.jpg": "/static/media/clarke.523f2252.jpg",
+    "static/media/clarks-classic.e7e01b36.jpg": "/static/media/clarks-classic.e7e01b36.jpg",
+    "static/media/jason-goodman-Oalh2MojUuk-unsplash.5c3e296e.jpg": "/static/media/jason-goodman-Oalh2MojUuk-unsplash.5c3e296e.jpg",
+    "static/media/julian-hochgesang-Dkn8-zPIbwo-unsplash.74bdbb1e.jpg": "/static/media/julian-hochgesang-Dkn8-zPIbwo-unsplash.74bdbb1e.jpg",
+    "static/media/kingscartel.d9c84039.jpg": "/static/media/kingscartel.d9c84039.jpg",
+    "static/media/leatherr.b78f4f9c.jpg": "/static/media/leatherr.b78f4f9c.jpg",
+    "static/media/male-coven-half-cover.6eadef57.jpg": "/static/media/male-coven-half-cover.6eadef57.jpg",
+    "static/media/men-formal-slip on.a538e169.jpg": "/static/media/men-formal-slip on.a538e169.jpg",
+    "static/media/men-leather-palm-slippers.d6ff0bd2.jpg": "/static/media/men-leather-palm-slippers.d6ff0bd2.jpg",
+    "static/media/mens-black-leather.e4d29df5.jpg": "/static/media/mens-black-leather.e4d29df5.jpg",
+    "static/media/mens-breathable-shoe.ff88009e.jpg": "/static/media/mens-breathable-shoe.ff88009e.jpg",
+    "static/media/sleak-comfy.b20e6ec6.jpg": "/static/media/sleak-comfy.b20e6ec6.jpg",
+    "static/media/sneakers.1a6b3e72.jpg": "/static/media/sneakers.1a6b3e72.jpg",
+    "static/media/verrati-patent.c6a05f8b.jpg": "/static/media/verrati-patent.c6a05f8b.jpg",
+    "static/media/verrati.db0192a9.jpg": "/static/media/verrati.db0192a9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d07f2c5.js",
+    "static/js/2.6ebbf17f.chunk.js",
+    "static/css/main.33aa5bf5.chunk.css",
+    "static/js/main.d3e6699f.chunk.js"
+  ]
+}
