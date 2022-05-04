@@ -1,0 +1,45 @@
+
+@mixin flex($param){
+    display: flex;
+    justify-content: $param;
+    align-items: center;
+}
+
+
+@mixin mobile-md {
+    @media screen and (min-width:500px) and (max-width:768px){
+        @content;
+    }
+}
+@mixin mobile-sm {
+    @media screen and (min-width:150px) and (max-width:425px){
+        @content;
+    }
+}
+
+.notfound{
+    background: white;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 1em;
+    height: 60vh;
+
+    @include mobile-sm(){
+        padding: 0em;
+    }
+
+    h1{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif !important;
+        font-weight: bold;
+        font-size: 8em;
+    }
+    p{
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif !important;
+        font-weight: bold;
+        font-size: 3em;
+    }
+
+
+}

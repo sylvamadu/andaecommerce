@@ -1,0 +1,127 @@
+
+@mixin flex($param){
+    display: flex;
+    justify-content: $param;
+    align-items: center;
+}
+
+
+@mixin mobile-md {
+    @media screen and (min-width:500px) and (max-width:768px){
+        @content;
+    }
+}
+@mixin mobile-sm {
+    @media screen and (min-width:150px) and (max-width:425px){
+        @content;
+    }
+}
+
+.main{
+    padding: .5em;
+    font-family: 'Roboto', sans-serif !important;
+    
+    .cardcollection{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: .5em;
+
+        @include mobile-sm(){
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-gap: .2em;
+        }
+
+        .card{
+            position: relative;
+            cursor: pointer;
+
+            @include mobile-sm(){
+                margin: .5em 0;
+            }
+
+            &:hover{
+                box-shadow: 0px 0px 0px 2px #929294;
+            }
+
+            figure{
+                width: 100%;
+                position: relative;
+
+                p{
+                    position: absolute;
+                    color: white;
+                    background: #E4811C;
+                    right: 1em;
+                    top: 1em;
+                    padding: .3em .7em;
+                    border-radius: .5em;
+                }
+                img{
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .card-content{
+                padding-left: 1em;
+                
+                // padding-top: .7em;
+                h3{
+                    color: black;
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    font-family: 'Josefin Sans', sans-serif !important;
+                }
+                h4{
+                    color: black;
+                    font-size: 1em;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+                .discount-price{
+                    color: black;
+                    font-size: 1em;
+                    font-weight: 400;
+                }
+                .discount-info{
+                    display: flex;
+                    margin-top: -1em;
+                    margin-bottom: 3em;
+                    .real-price{
+                        color: #757575;
+                        font-size: 1em;
+                        font-weight: 400;
+                        text-decoration: line-through;
+                    }
+                    .percentdiscount{
+                        color: #E4811C;
+                        font-size: 1em;
+                        font-weight: 400;
+                        margin-left: 1em;
+                    }
+                }
+              
+            }
+            button{
+                border: none;
+                background: #E4811C;
+                color: white;
+                text-align: center;
+                font-weight: bold;
+                padding: 1em 0;
+                cursor: pointer;
+                border-radius: 1px;
+                text-transform: uppercase;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+  
+
+
